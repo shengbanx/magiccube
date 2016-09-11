@@ -95,6 +95,7 @@ var gamer = (function() {
 
 	function start() {
 		startBtn.style.display = 'none';
+		title.style.display='none'
 		timeEle.style.top = '10px';
 		successTxt.style.display = 'none';
 
