@@ -31,8 +31,8 @@ var view = (function() {
 						var event = event||window.event;
 
 						if (mouseHandle && mouseDown) {
-							offset.x = (event.touches[0].pageX - initMouseSize.x)/2;
-							offset.y = (event.touches[0].pageY - initMouseSize.y)/2;
+							offset.x = (event.touches[0].pageX - initMouseSize.x)*1.5;
+							offset.y = (event.touches[0].pageY - initMouseSize.y)*1.5;
 
 							var edge = Math.sqrt(offset.x*offset.x + offset.y*offset.y);
 							if (!edge) return;
